@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanmay Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            padding: 0 20px;
+        }
+
+        .left {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: palegreen;
+            margin: 0 23px;
+        }
+
+        nav ul li:hover a {
+            text-decoration: none;
+            color: lavender;
+        }
+
+        .FirstSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px;
+            margin-top: 110px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        .leftsection {
+            width: 50%;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .rightSection img {
+            width: 300px;
+            height: auto;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: aqua;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        #element {
+            color: blueviolet;
+            font-size: 2rem;
+        }
+
+        .SecondSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(18, 18, 62);
+            margin-top: 30px;
+        }
+
+        .SecondSection h1 {
+            color: white;
+            text-align: center;
+            font-size: 2.2rem;
+        }
+
+        hr {
+            border: 1px solid rgb(18, 18, 62);
+            margin: 40px 0;
+        }
+
+        .vertical-timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .vertical {
+            position: relative;
+            width: 80%;
+            background-color: rgb(18, 18, 62);
+            margin-bottom: 50px;
+            border-left: 3px solid white;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .vertical-title {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .vertical-desc {
+            color: white;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        .image-top {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            left: -25px;
+            top: 20px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: rgb(18, 18, 62);
+            color: #e0e1ea;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            margin-top: 40px;
+        }
+
+        .footer .footer-section {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #e0e1ea;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer a:hover {
+            color: blueviolet;
+        }
+
+        .footer .social-icons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer .social-icons a {
+            font-size: 1.5rem;
+        }
+
+        /* Connect Section with LinkedIn and Download Button */
+        .connect-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .connect-section a {
+            margin-right: 15px;
+        }
+
+        .connect-section .download-btn {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .connect-section .download-btn:hover {
+            background-color: #7a3af7;
+        }
+
+        .connect-section img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Tanmay's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- First Section -->
+        <section class="FirstSection">
+            <div class="leftsection">
+                <h1>Hi, My name is <span class="purple">Tanmay</span></h1>
+                <div>I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+
+            <div class="rightSection">
+                <img src="dev.png" alt="Developer Image">
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Past Experience Section -->
+        <section class="SecondSection">
+            <div class="text-gray">What I Have Done So Far</div>
+            <h1>Past Experience</h1>
+            <div class="vertical-timeline">
+                <div class="vertical">
+                    <img class="image-top" src="cog.png" alt="Experience Image">
+                    <div class="vertical-title">PAT (2010-2012)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero unde omnis ullam, enim facilis
+                        possimus accusamus ab! Dolores mollitia odio quos. Facilis, incidunt?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="ibm.png" alt="Experience Image">
+                    <div class="vertical-title"> Analyst (2013-2015)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero unde omnis ullam, enim facilis
+                        possimus accusamus ab! Dolores mollitia odio quos. Facilis, incidunt?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Delloite.png" alt="Experience Image">
+                    <div class="vertical-title">Software Devlopment Engineer II (2016-2018)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero unde omnis ullam, enim facilis
+                        possimus accusamus ab! Dolores mollitia odio quos. Facilis, incidunt?
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>About Me</h3>
+            <p>Passionate web developer with experience in frontend and backend development. Always eager to learn new technologies and improve my skills.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Contact Me</a>
+        </div>
+
+        <!-- Connect Section with LinkedIn and Download Button -->
+        <div class="footer-section connect-section">
+            <a href="https://www.linkedin.com/in/tanmay" target="_blank">
+                <img src="SDE.png" alt="LinkedIn">
+            </a>
+            <a href="Tanmay_Resume.pdf" class="download-btn" download>Download Resume</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Video Editor', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
